@@ -4,6 +4,13 @@
 
 Time spent: **10** hours spent in total
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/whzMkW5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ## User Stories
 
 The following **required** functionality is completed:
@@ -13,13 +20,6 @@ The following **required** functionality is completed:
 - [ ] User can create a charge for a desired amount on the Checkout tab.
 - [ ] User sees an error message when there is a card processing error.
 - [ ] User can see past charges on the Charges tab. 
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://imgur.com/a/0GHJsTp' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
