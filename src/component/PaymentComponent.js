@@ -6,11 +6,7 @@ export default class PaymentComponent extends Component {
     charges: null
   };
   async componentDidMount(){
-    let reponse = await fetch("/charges", {
-      method: "POST",
-      headers: {"Content-Type": "text/plain"},
-      body: 10
-    }).then((reponse) => reponse.json());
+    let reponse = await this.props.requestCharge("charges", 10);
     this.setState({
       charges: reponse.charges.data,
       loading: false

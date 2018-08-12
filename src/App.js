@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {StripeProvider} from 'react-stripe-elements';
+import {withStripe} from "./WithStripAPI"
 
 import { TabList, Tab } from "./component/TabList";
 import PaymentComponent from "./component/PaymentComponent";
 import MyStoreCheckout from './component/MyStoreCheckout';
 
+const HOCPaymentComponent = withStripe(PaymentComponent);
 class App extends Component {
   render() {
     return (
@@ -22,7 +24,7 @@ class App extends Component {
             </StripeProvider>
           </Tab>
           <Tab name="payment">
-            <PaymentComponent />
+            <HOCPaymentComponent />
           </Tab>
         </TabList>
       </div>
